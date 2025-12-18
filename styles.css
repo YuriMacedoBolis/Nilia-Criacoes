@@ -1,0 +1,106 @@
+:root {
+  --cor-primaria: #000000;
+  --cor-secundaria: #7a0202;
+  --cor-destaque: #ffffff;
+  --cor-dourado: #d4af37;
+
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--cor-primaria);
+  color: var(--cor-primaria);
+}
+
+.navbar{
+  background-color: var(--cor-primaria);
+}
+
+/* HERO */
+.hero-section {
+  background:radial-gradient(circle,rgba(0, 0, 0, 0) 57%, rgba(0, 0, 0, 1) 100%, rgba(0, 0, 0, 0.47) 100%, rgba(0, 0, 0, 1) 100%),
+              url(imagens/imagem_central.jpg) center/cover no-repeat;
+  min-height: 42vh;
+}
+
+
+
+.hero-section a{
+  transition: 0.25s ease-in-out
+}
+
+.hero-section a:hover{
+  transition: 1.5 ease-in-out;
+  background-color: var(--cor-secundaria);
+  border: var(--cor-secundaria);
+  color: var(--cor-primaria);
+}
+/* Product card */
+.product-card .card-img-top {
+  border-radius: 12px;
+  height: 310px;
+  object-fit: cover;
+  transition: transform .25s ease, box-shadow .25s ease;
+  cursor: pointer;
+}
+
+.container-produto .card {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.container-produto:hover .card {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.14);
+}
+
+/* highlight on hover (dourado) */
+.container-produto:hover {
+  outline: 2px solid rgba(212,175,55,0.12);
+  border-radius: 14px;
+}
+
+/* Buttons */
+.btn-outline-danger {
+  border-color: var(--cor-secundaria);
+  color: var(--cor-secundaria);
+}
+.btn-outline-danger:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-destaque);
+}
+
+/* Modal carousel images */
+#productCarouselInner img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+
+/* Sizes area */
+#sizeCheckboxes .form-check {
+  min-width: 64px;
+}
+
+/* Offcanvas/carrinho */
+.offcanvas-body {
+  min-height: 40vh;
+}
+
+/* Footer */
+footer a { color: var(--cor-destaque); }
+
+/* Responsive tweaks */
+@media (min-width: 768px) {
+  .hero-section { min-height: 48vh; }
+  #productCarouselInner img { height: 50vh; }
+}

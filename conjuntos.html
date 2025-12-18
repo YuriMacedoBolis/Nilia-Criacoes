@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nília Criações</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark  py-2">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Nília Criações</a>
+
+      <button class="btn btn-outline-light d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasCart">
+        <i class="bi bi-cart-fill"></i>
+        <span id="cartCountBadge" class="badge bg-danger rounded-pill ms-1">0</span>
+      </button>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item me-3"><a class="nav-link" href="index.html">Pagina Inicial</a></li>
+          <li class="nav-item me-3"><a class="nav-link" href="conjuntos.html">Conjuntos</a></li>
+          <li class="nav-item me-3"><a class="nav-link" href="calcinhas.html">Calcinhas</a></li>
+          <li class="nav-item me-3"><a class="nav-link" href="dormir.html">Dormir</a></li>
+          <li class="nav-item me-3"><a class="nav-link" href="infantil.html">Infantil</a></li>
+
+          <li class="nav-item">
+            <button class="btn btn-outline-light d-none d-lg-block" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasCart">
+              <i class="bi bi-cart3"></i>
+              <span id="cartCountBadgeDesktop" class="badge bg-danger rounded-pill ms-1">0</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero-section text-white text-center d-flex align-items-center">
+    <div class="container py-5">
+      <h1 class="display-6 fw-bold">CONJUNTOS</h1>
+      <p class="lead">roupas Especiais para dias únicos</p>
+      <a href="#produtos" class="btn btn-lg btn-outline-light mt-3">Ver Produtos</a>
+    </div>
+  </header>
+
+  <!-- PRODUTOS -->
+  <main class="container my-4" id="produtos">
+    <h2 class="h4 mb-3">Nossas Peças</h2>
+    <div class="row g-3">
+
+      <!-- Conjunto 1 -->
+      <div class="col-12 col-sm-6 col-md-4 container-produto" data-id="c1"
+        data-name="Conjunto de Renda Preto e Vermelho" data-images="imagens/conj1.jpg,imagens/conj1tras.jpg"
+        data-desc="Conjunto em renda macia — sensual e confortável.">
+        <div class="card h-100 product-card">
+          <img src="imagens/conj1.jpg" class="card-img-top card-clickable" alt="Conjunto de Renda Vermelho">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Conjunto de Renda Preto e Vermelho</h5>
+            <p class="card-text mb-2">Conjunto em renda macia — sensual e confortável.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-danger btn-sm">
+                Ver detalhes
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Conjunto 2 -->
+      <div class="col-12 col-sm-6 col-md-4 container-produto" data-id="c2" data-name="Conjunto de Renda Lilás"
+        data-images="imagens/conj2.jpg,imagens/conj2tras.jpg,imagens/conj2cal.jpg"
+        data-desc="Conjunto em renda macia — sensual e confortável.">
+        <div class="card h-100 product-card">
+          <img src="imagens/conj2.jpg" class="card-img-top card-clickable" alt="Conjunto de Renda Lilás">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Conjunto de Renda Lilás</h5>
+            <p class="card-text mb-2">Conjunto em renda macia — sensual e confortável.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-danger btn-sm">
+                Ver detalhes
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Conjunto 3 -->
+      <div class="col-12 col-sm-6 col-md-4 container-produto" data-id="c3" data-name="Conjunto de Renda Rose"
+        data-images="imagens/conj3.jpg,imagens/conj3tras.jpg,imagens/conj3cal.jpg"
+        data-desc="Conjunto em renda macia — sensual e confortável.">
+        <div class="card h-100 product-card">
+          <img src="imagens/conj3.jpg" class="card-img-top card-clickable" alt="Conjunto de Renda Rose">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Conjunto de Renda Rose</h5>
+            <p class="card-text mb-2">Conjunto em renda macia — sensual e confortável.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-danger btn-sm">
+                Ver detalhes
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Conjunto 4 -->
+      <div class="col-12 col-sm-6 col-md-4 container-produto" data-id="c4" data-name="Conjunto de Renda Vermelho"
+        data-images="imagens/conj4.jpg,imagens/conj4tras.jpg,imagens/conj4cal.jpg,imagens/conj4sut.jpg"
+        data-desc="Conjunto em renda macia — sensual e confortável.">
+        <div class="card h-100 product-card">
+          <img src="imagens/conj4.jpg" class="card-img-top card-clickable" alt="Conjunto de Renda Vermelho">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Conjunto de Renda Vermelho</h5>
+            <p class="card-text mb-2">Conjunto em renda macia — sensual e confortável.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-danger btn-sm">
+                Ver detalhes
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Conjunto 5 -->
+      <div class="col-12 col-sm-6 col-md-4 container-produto" data-id="c5" data-name="Conjunto de Renda Preto"
+        data-images="imagens/conj5.jpg,imagens/conj5tras.jpg,imagens/conj5cal.jpg,imagens/conj5sut.jpg"
+        data-desc="Conjunto em renda macia — sensual e confortável.">
+        <div class="card h-100 product-card">
+          <img src="imagens/conj5.jpg" class="card-img-top card-clickable" alt="Conjunto de Renda Preto">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Conjunto de Renda Preto</h5>
+            <p class="card-text mb-2">Conjunto em renda macia — sensual e confortável.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-danger btn-sm">
+                Ver detalhes
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Conjunto 6 -->
+      <div class="col-12 col-sm-6 col-md-4 container-produto" data-id="c6" data-name="Conjunto de Renda Preto sem Bojo"
+        data-images="imagens/conj6.jpg,imagens/conj6tras.jpg,imagens/conj6cal.jpg,imagens/conj6sut.jpg"
+        data-desc="Conjunto em renda macia — sensual e confortável.">
+        <div class="card h-100 product-card">
+          <img src="imagens/conj6.jpg" class="card-img-top card-clickable" alt="Conjunto de Renda Preto sem Bojo">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Conjunto de Renda Preto sem Bojo</h5>
+            <p class="card-text mb-2">Conjunto em renda macia — sensual e confortável.</p>
+            <div class="mt-auto d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-danger btn-sm">
+                Ver detalhes
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- PRODUCT DETAIL MODAL -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen-sm-down modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="productModalTitle">Produto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row gx-4">
+            <div class="col-12 col-md-6">
+              <!-- Carousel -->
+              <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner" id="productCarouselInner">
+                  <!-- imagens injetadas aqui -->
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                  data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                  data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <p class="text-muted small" id="productModalDesc"></p>
+              <div class="d-flex align-items-baseline my-2">
+                <h4 class="me-3" id="productModalPrice">R$ 0,00</h4>
+                <span class="badge rounded-pill" id="productModalBadge"
+                  style="background: var(--cor-dourado); color:#000;">Novo</span>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Tamanhos</label>
+                <div id="sizeCheckboxes" class="d-flex flex-wrap gap-2">
+                  <!-- Checkboxes injetadas aqui (P, M, G, GG...) -->
+                </div>
+                <div class="form-text">Marque um ou mais tamanhos para adicionar ao carrinho.</div>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label fw-semibold">Quantidade padrão</label>
+                <input type="number" id="productQuantity" class="form-control" value="1" min="1"
+                  style="max-width:120px;">
+                <div class="form-text">Quantidade aplicada por tamanho selecionado.</div>
+              </div>
+
+              <div class="d-flex gap-2">
+                <button id="modalAddToCartBtn" class="btn btn-danger">Adicionar ao Carrinho</button>
+                <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARRINHO -->
+  <div class="offcanvas offcanvas-end" id="offcanvasCart">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Seu Carrinho</h5>
+      <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <div id="cartItemsList" class="mb-3">
+        <p class="text-muted">Seu carrinho está vazio.</p>
+      </div>
+
+      <div class="mt-auto">
+        <div class="d-flex justify-content-between mb-2">
+        </div>
+
+        <button id="whatsappBtn" class="btn btn-danger w-100 mb-2" disabled>
+          <i class="bi bi-whatsapp"></i> Fazer Pedido no WhatsApp
+        </button>
+
+        <button id="clearCartBtn" class="btn btn-outline-secondary w-100">Limpar Carrinho</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <small>© <span id="year"></span> Nília Criações</small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>

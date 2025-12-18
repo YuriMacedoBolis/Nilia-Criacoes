@@ -1,5 +1,5 @@
 // Número do WhatsApp
-const WHATSAPP_NUMBER = "5561999072806";
+const WHATSAPP_NUMBER = "+55 61 9243-5990";
 const WHATSAPP_PREFIX = "Olá! Gostaria de fazer o pedido dos seguintes itens:\n";
 
 let cart = [];
